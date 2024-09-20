@@ -13,9 +13,56 @@ namespace Ejercicio3
 {
     public partial class Form1 : Form
     {
+        Operacion operacion = new Operacion();
+        int[,] matriz1 = new int[4, 4];
+        int[,] matriz2 = new int[4, 4];
         public Form1()
         {
             InitializeComponent();
+            tbValor1.Clear();
+            leerMatriz1();
+    
+
+        }
+        
+
+        private void leerMatriz1()
+        {
+            
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    if (int.TryParse(tbValor1.Text, out int numero))
+                    {
+                        matriz1[i, j] = numero;
+                        tbValor1.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Por favor, ingrese un número válido.");
+                        return;
+                    }
+                    tbValor1.Clear();
+                }
+            }
+            
+            
+
+        }
+
+        private void leerMatriz2()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    lblOperacion2.Text = $"Ingrese el valor de la posición {i + 1}, {j + 1}";
+                    matriz2[i, j] = Convert.ToInt32(tbValor1.Text);
+                    tbValor2.Clear();
+                }
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,54 +70,40 @@ namespace Ejercicio3
 
         }
 
-        private void InicializarDataGridViews()
-        {
-            dataGridView1.ColumnCount = 4;
-            dataGridView1.RowCount = 4;
-            dataGridView2.ColumnCount = 4;
-            dataGridView2.RowCount = 4;
-            dataGridViewResult.ColumnCount = 4;
-            dataGridViewResult.RowCount = 4;
-        }
 
-        private int[,] LeerMatriz(DataGridView dataGridView)
-        {
-            int[,] matriz = new int[4, 4];
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 0; j < 4; j++)
-                {
-                    matriz[i, j] = Convert.ToInt32(dataGridView[j, i].Value);
-                }
-            }
-            return matriz;
-        }
 
-        private void MostrarMatriz(int[,] matriz, DataGridView dataGridView)
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 0; j < 4; j++)
-                {
-                    dataGridView[j, i].Value = matriz[i, j];
-                }
-            }
-        }
+      
+
+       
 
         private void btnSumar_Click(object sender, EventArgs e)
         {
-            int[,] matriz1 = LeerMatriz(dataGridView1);
-            int[,] matriz2 = LeerMatriz(dataGridView2);
-            int[,] resultado = Operacion.SumarMatrices(matriz1, matriz2);
-            MostrarMatriz(resultado, dataGridViewResult);
+           
+            int[,] resultado = operacion.SumarMatrices(matriz1, matriz2);
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    listBox1.Items.Add(matriz1[i, j]);
+                    listBox2.Items.Add(matriz2[i, j]);
+                    listBox3.Items.Add(resultado[i, j]);
+                }
+            }
+
         }
 
-        private void btnMultiplicar_Click(object sender, EventArgs e)
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
-            int[,] matriz1 = LeerMatriz(dataGridView1);
-            int[,] matriz2 = LeerMatriz(dataGridView2);
-            int[,] resultado = Operacion.MultiplicarMatrices(matriz1, matriz2);
-            MostrarMatriz(resultado, dataGridViewResult);
+            leerMatriz1();
+            leerMatriz2();
+        }
+
+        private void tbValor1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
