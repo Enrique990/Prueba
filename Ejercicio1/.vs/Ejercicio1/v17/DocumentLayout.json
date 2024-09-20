@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Ejercicio1\\",
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Prueba\\Ejercicio1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97BB40D8-72F1-4425-8464-6E655B45A89E}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\usuario\\onedrive\\escritorio\\sistematico1\\ejercicio1\\ejercicio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{97BB40D8-72F1-4425-8464-6E655B45A89E}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\usuario\\onedrive\\escritorio\\sistematico1\\prueba\\ejercicio1\\ejercicio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BB40D8-72F1-4425-8464-6E655B45A89E}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97BB40D8-72F1-4425-8464-6E655B45A89E}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\usuario\\onedrive\\escritorio\\sistematico1\\prueba\\ejercicio1\\ejercicio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{97BB40D8-72F1-4425-8464-6E655B45A89E}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97BB40D8-72F1-4425-8464-6E655B45A89E}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\usuario\\onedrive\\escritorio\\sistematico1\\prueba\\ejercicio1\\ejercicio1\\models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BB40D8-72F1-4425-8464-6E655B45A89E}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,10 +27,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Ejercicio1\\Ejercicio1\\Form1.cs",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Prueba\\Ejercicio1\\Ejercicio1\\Form1.cs",
               "RelativeDocumentMoniker": "Ejercicio1\\Form1.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Ejercicio1\\Ejercicio1\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Prueba\\Ejercicio1\\Ejercicio1\\Form1.cs",
+              "RelativeToolTip": "Ejercicio1\\Form1.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwB4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T13:36:21.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Calculadora.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Prueba\\Ejercicio1\\Ejercicio1\\models\\Calculadora.cs",
+              "RelativeDocumentMoniker": "Ejercicio1\\models\\Calculadora.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Prueba\\Ejercicio1\\Ejercicio1\\models\\Calculadora.cs",
+              "RelativeToolTip": "Ejercicio1\\models\\Calculadora.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T13:32:20.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Prueba\\Ejercicio1\\Ejercicio1\\Form1.cs",
+              "RelativeDocumentMoniker": "Ejercicio1\\Form1.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Sistematico1\\Prueba\\Ejercicio1\\Ejercicio1\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Ejercicio1\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T13:28:38.662Z",
